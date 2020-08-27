@@ -6,7 +6,10 @@ import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import androidx.navigation.Navigation
 import com.hefesto.easycall.R
+import kotlinx.android.synthetic.main.appbar_home.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,6 +20,26 @@ class MainActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
+        }
+        appBarTitleHandler()
+    }
+
+    private fun appBarTitleHandler() {
+        val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
+        navController.addOnDestinationChangedListener { controller, destination, arguments ->
+             when (destination.id) {
+                R.id.FirstFragment -> {
+                    appbar_tv_name.text = "Contatos"
+                    appbar_iv_pressback.visibility = View.GONE
+                }
+                R.id.SecondFragment -> {
+                    appbar_tv_name.text = "Editar Contato"
+                    appbar_iv_pressback.visibility = View.VISIBLE
+                    appbar_iv_pressback.setOnClickListener { onBackPressed() }
+                }
+                else -> "EasyCall"
+            }
+
         }
     }
 
