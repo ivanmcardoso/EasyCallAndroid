@@ -1,12 +1,15 @@
 <resources>
-    <string name="app_name">EasyCAllAndroid</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="app_name">Contatos</string>
+    <string name="labelConfiguration">Configurações</string>
+    <string name="app_para_envio_de_mensagem">App para envio de mensagem:</string>
+    <string name="labelEnvio">App para envio de mensagem:</string>
+    <string name="rgWhat">WhatsApp</string>
+    <string name="rgMensagem">Mensagem</string>
+    <string name="labelChamada">App para realizar chamada:</string>
+    <string name="rgTelefonica">Ligação telefônica</string>
+    <string name="rgChamaWhat">Chamada WhatsApp</string>
+    <string name="labelBtnConcluir">Concluir</string>
+    <string name="labelOriantationMap">Quando estiver pronto, segure o botão abaixo para começar a gravar seus movimentos e solte quando terminar a gravação</string>
+    <string name="labelBtnGravar">Gravar</string>
+    <string name="labelBtnConcluir2">concluir</string>
 </resources>
