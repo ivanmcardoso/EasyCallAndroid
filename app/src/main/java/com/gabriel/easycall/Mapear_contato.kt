@@ -19,5 +19,4 @@ class Mapear_contato : AppCompatActivity() {
         finish()
     }
 
-
 }
